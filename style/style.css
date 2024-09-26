@@ -1,0 +1,18 @@
+/* Подключение шрифтов, обнуления стилей, цветов */
+
+@import url(../style/null.css);
+@import url(../style/vars.css);
+@import url(../style/fonts.css);
+
+/* Компоненты */
+@import url(../style/components/jumbo.css);
+@import url(../style/components/burger.css);
+@import url(../style/components/btns.css);
+/* Секции */
+@import url(../style/components/sections/home.css);
+@import url(../style/components/sections/brands.css);
+@import url(../style/components/sections/podcast.css);
+
+/* Шапка и подвал */
+@import url(../style/components/header.css);
+@import url(../style/components/footer.css);

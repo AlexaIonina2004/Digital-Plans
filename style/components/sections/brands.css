@@ -1,0 +1,10 @@
+.brands {
+    margin-bottom: 58px;
+    overflow: hidden;
+  }
+  .brands__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
