@@ -58,6 +58,9 @@ fill: var(--white-color);
     opacity: 0.7;
   }
 @media (max-width: 1254px){
+  .footer {
+    padding: 64px 0px 450px 0px;
+  }
     .footer__title {
 text-align: left;
     }
@@ -70,10 +73,22 @@ flex-direction: column;
       }    
 }
 @media (max-width: 768px){
+  .footer {
+    padding: 64px 0px 172px 0px;
+  }
     .footer__title {
         font-size: 80px;
     }
     .footer__btn:last-child {
         width: 100%;
     }
+    .footer__nav {
+      margin-bottom: 114px;
+    }
+}
+@media (max-width: 380px){
+  .footer__title {
+    font-size: 60px;
+}
+
 }

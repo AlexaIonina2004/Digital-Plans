@@ -46,6 +46,10 @@
 @media (max-width: 607px){
   .home {
     margin-top: 95px;
+  
+  }
+  .home__body {
+    margin-bottom: 95px;
   }
     .home__title {
       font-size: 33px;

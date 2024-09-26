@@ -3,17 +3,13 @@ const menu = document.querySelector(".header__menu");
 let menuItem = document.querySelector('.no-hidden-menu')
 let header = document.querySelector('.header')
 let brands = document.querySelector('.brands')
-let openUnderMenu = document.querySelectorAll('.menu__link')
+let openUnderMenu = document.querySelectorAll('.big-menu')
 const width = window.innerWidth;
 
-// window.addEventListener('resize',(e) => {
-//   const width = document.body.clientWidth;
-//   console.log(width)
-//   if(width < 1200) {
-//   brands.classList.add('marquee')
-  
-//   }
-// });
+const opacity = document.createElement('div');
+opacity.classList.toggle('opacity')
+
+
 
 window.addEventListener("scroll", function () {
 
@@ -24,14 +20,26 @@ window.addEventListener("scroll", function () {
   }
 });
 
-if(width > 1280) {
-  // console.log(width)
-    const opacity = document.createElement('div');
-    opacity.classList.toggle('opacity')
+if(width > 992) {
+
   
     let currentlyOpenItem = null; 
   
     openUnderMenu.forEach(item => {
+
+      item.addEventListener('mouseenter', function() {
+        document.querySelector('.header').classList.add('hovered');
+        document.querySelector('.wrapper').appendChild(opacity);
+       
+  });
+  item.addEventListener('mouseleave', function() {
+    document.querySelector('.header').classList.remove('hovered');
+    document.querySelector('.wrapper').removeChild(opacity);
+});
+
+
+
+
       item.addEventListener('click', (e) => {
         const openMenu = item.nextElementSibling;
         let isOpen = openMenu.classList.toggle('openUnder');
@@ -68,8 +76,22 @@ if(width > 1280) {
       });
 }
 
+
 burger?.addEventListener("click", (e) => {
-    menu?.classList.toggle("menu-open");
+
+  let isOpen = menu?.classList.toggle("menu-open");
+
+    if(isOpen) {
+      document.querySelector('.wrapper').appendChild(opacity);
+      
+    } else {
+      document.querySelector('.wrapper').removeChild(opacity);
+    }
+
+    opacity?.addEventListener('click', e => {
+      document.querySelector('.wrapper').removeChild(opacity);
+      menu?.classList.remove("menu-open");
+    })
   });
 
 

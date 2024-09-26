@@ -13,12 +13,14 @@
   left: 0;
   width: 100%;
   z-index: 5;
+  transition: 0.3s;
 }
 .header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 34px 0px;
+  /* padding: 34px 0px; */
+  gap: 10px;
 }
 .menu__logo {
   font-size: 33px;
@@ -41,7 +43,7 @@
 }
 
 .menu__item span {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 .menu__link {
   display: flex;
@@ -51,10 +53,24 @@
   color: var(--main-color);
   width: 100%;
   color: var(--main-color);
+ 
 }
 .menu__link:hover {
   color: #636363;
   transition: 0.3s;
+}
+.menu__link img  {
+  transition: 0.3s;
+}
+
+.menu__item:hover .under-menu {
+  opacity: 1;
+  visibility: visible;
+  max-height: unset;
+  overflow: visible;
+}
+.hovered {
+  background: #fff !important;
 }
 
 .menu__connect {
@@ -67,21 +83,52 @@
   transition: 0.3s;
   opacity: 0.7;
 }
+.consultation {
+  display: flex;
+  justify-content: space-between;
+  background: #1111;
+  border-radius: 0px 0px 20px 20px;
+  /* margin-top: 50px; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 13px 38px;
 
+}
+.consultation__info {
+  max-width: 418px;
+}
+.consultation__title {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.consultation__subtitle {
+  font-weight: 400;
+font-size: 12px;
+color: rgba(0, 0, 0, 0.4);
+}
 .under-menu {
+  max-height: 0;
+  overflow: hidden;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   opacity: 0;
-  gap: 31px;
   visibility: hidden;
+  gap: 31px;
+  
   position: absolute;
-  top: 39px;
+  top: 80px;
+
   left: 0;
   background: var(--white-color);
   min-width: 736px;
-  padding: 23px 29px;
+  padding: 35px 29px 40px 29px;
   border-radius: 0px 0px 30px 30px;
-  transition: 0.3s;
+  transition:  0.3s;
+}
+.products-items {
+  padding-bottom: 100px;
 }
 .product-menu__link {
   display: flex;
@@ -107,12 +154,13 @@
   justify-content: center;
   width: 100%;
   padding: 65px;
-  top: 108px;
+  /* top: 108px; */
+  top: 76px;
 }
 .competencies-item {
   position: static;
 }
-.under-menu__block span {
+.under-menu__span {
   display: block;
   font-weight: 500;
   font-size: 20px;
@@ -123,14 +171,27 @@
   flex-direction: column;
   gap: 8px;
 }
-.under-menu__item a {
-  padding: 5px 0px;
-  transition: 0.3s;
-  border-radius: 4px;
+.under-menu__item {
+  width: 100%;
 }
-.under-menu__item a:hover {
-  background: #f0f0f0;
+
+.under-menu__item a {
+  display: inline-block;
+  width: 100%;
+
+}
+.under-menu__item span {
+  transition: 0.3s;
   padding: 5px 5px;
+}
+.under-menu__item:hover span {
+
+  background: #f0f0f0;
+  border-radius: 4px;
+
+}
+.under-menu__span-under {
+  font-size: 16px ;
 }
 .under-menu__link {
   font-weight: 400;
@@ -143,7 +204,14 @@
   row-gap: 17px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
+
+  .menu__item:hover .menu__link img {
+    transform: rotate(-180deg);
+  }
+  .menu__item {
+    padding: 32px 0px;
+  }
   .openUnder {
     visibility: visible;
     opacity: 1;
@@ -160,9 +228,37 @@
 .bottom-btn {
   display: none;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1378px){
+  .menu__list {
+    gap: 22px;
+  }
+}
+@media (max-width: 1280px){
+  .menu__connect {
+    display: none;
+  }
   
-  
+  .menu__item {
+    font-size: 16px;
+  }
+  /* .menu__logo {
+    font-size: 30px;
+  } */
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 34px 0px;
+  }
+  .consultation {
+    flex-direction: column;
+    padding: 19px 17px;
+    border-radius: unset;
+    width: 347px;
+    left: 0;
+  }
+  .consultation__info {
+    margin-bottom: 23px;
+  }
   .socials-menu {
     display: flex;
     gap: 3px;
@@ -187,7 +283,7 @@
     right: -100%;
     transition: right 0.3s ease 0s;
     background: var(--white-color);
-    padding-top: 78px;
+    padding-top: 31px;
   }
   .menu__nav > ul {
     left: 0;
@@ -240,10 +336,10 @@
     opacity: 1;
     visibility: visible;
   }
+.competencies .under-menu__block .under-menu__body .under-menu__list .under-menu__item:last-child {
+  margin-bottom: 32px;
+}
 
-  .under-menu__block:not(:last-child) {
-    margin-bottom: 32px;
-  }
   .under-menu__list {
     display: flex;
     flex-direction: column;
@@ -258,16 +354,13 @@
   }
 
 
- 
-  .menu__connect {
-    display: none;
-  }
+
   .bottom {
     position: absolute;
     bottom: 33px;
     left: 0;
     width: 94%;
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 0px 7px;
   }
   .bottom-btn {
     display: block;
@@ -281,7 +374,8 @@
 }
 @media (max-width: 375px){
   .menu__nav {
-    max-width: 340px;
+    /* max-width: 340px; */
+    max-width: 284px;
     min-width: unset;
     width: 100%;
 
