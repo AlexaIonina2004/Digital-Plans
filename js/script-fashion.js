@@ -50,3 +50,46 @@ const swiper = new Swiper(".swiper", {
       }
     });
   });
+  IMask(
+    document.getElementById('phone'),
+    {
+      mask: '+{7}(000)000-00-00'
+    }
+  )
+
+  $(document).ready(function() {
+    $("#form").validate({
+      rules: {
+        name: {
+          required: true
+        },
+        phone: {
+          required: true
+        },
+        email: {
+          required: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Неверно заполнено поле"
+        },
+        phone: {
+          required: "Неверно заполнено поле"
+        },
+        email: {
+          required: "Неверно заполнено поле"
+        }
+      },
+      errorPlacement: function(error, element) {
+        $(element).closest(".form-offer__body").find(".form-offer__error").text(error.text());
+      },
+      highlight: function(element, errorClass, validClass) {
+        $(element).closest(".form-offer__body").find(".form-offer__error").addClass("form-offer__error--active");
+      },
+      unhighlight: function(element, errorClass, validClass) {
+        $(element).closest(".form-offer__body").find(".form-offer__error").removeClass("form-offer__error--active");
+      }
+    });
+  });
+  
