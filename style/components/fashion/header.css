@@ -1,0 +1,116 @@
+.header-fashion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding-top: 32px;
+}
+.header-fashion__body {
+  display: flex;
+  justify-content: space-between;
+}
+.header-fashion__left {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+.header-fashion__logo {
+  font-size: 65px;
+  font-weight: 700;
+}
+.header-fashion__instructions {
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.header-fashion__instructions:hover {
+  color: #979595;
+}
+
+.header-fashion__connect {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-fashion__phone {
+  font-weight: 500;
+  font-size: 23px;
+  transition: 0.3s;
+}
+.header-fashion__phone:hover {
+  color: #979595;
+}
+.header-fashion__socials {
+  display: flex;
+  gap: 15px;
+}
+.header-fashion__socials a {
+  transition: 0.3s;
+}
+.header-fashion__socials a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1385px) {
+  .header-fashion__left {
+    gap: 13px;
+  }
+  .header-fashion__phone {
+    font-size: 18px;
+  }
+  .header-fashion__connect {
+    gap: 15px;
+  }
+  .header-fashion__socials {
+    gap: 5px;
+  }
+  .header-fashion__buttons {
+    gap: 10px;
+  }
+}
+@media (max-width: 1264px) {
+  .header-fashion__logo {
+    font-size: 50px;
+  }
+  .header-fashion__instructions {
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  .header-fashion__btn {
+    padding: 6px 13px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  @media (max-width: 1040px) {
+    .header-fashion__buttons {
+      display: none;
+    }
+    @media (max-width: 797px) {
+      .header-fashion__connect {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 654px) {
+      .header-fashion__instructions {
+        display: none;
+      }
+    }
+    @media (max-width: 460px) {
+      .header-fashion__logo {
+        font-size: 40px;
+      }
+    }
+    @media (max-width: 374px) {
+      .header-fashion__phone {
+        display: none;
+      }
+      .header-fashion__socials {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,601 +1,387 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Plans</title>
     <link rel="stylesheet" href="style/style.css" />
 
+    <link rel="stylesheet" href="style/slinky.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="jumbo absolute -inset-[10px] opacity-50"></div>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__menu menu">
+                    <div class="menu__logo">DIGITAL PLANS</div>
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li class="menu__item big-menu">
+                                <a href="#" class="menu__link">Продукты <img src="./img/icons/arrow.svg" alt="arrow" /></a>
+
+                                <ul class="menu__under under-menu products-items">
+                                    <li class="under-menu__product product-menu">
+                                        <a href="/fashion.html" class="product-menu__link">
+                                            <img src="./img/icons/product.svg" alt="product" />
+                                            <div class="product-menu__info">
+                                                <h3 class="product-menu__title">YouBrand: Fashion</h3>
+                                                <p class="product-menu__text">
+                                                    Готовое e-commerce решение для брендов одежды
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="under-menu__product product-menu">
+                                        <a href="/fashion.html" class="product-menu__link">
+                                            <img src="./img/icons/product.svg" alt="product" />
+                                            <div class="product-menu__info">
+                                                <h3 class="product-menu__title">YouBrand: Fashion</h3>
+                                                <p class="product-menu__text">
+                                                    Готовое e-commerce решение для брендов одежды
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="under-menu__product product-menu">
+                                        <a href="/fashion.html" class="product-menu__link">
+                                            <img src="./img/icons/product.svg" alt="product" />
+                                            <div class="product-menu__info">
+                                                <h3 class="product-menu__title">YouBrand: Fashion</h3>
+                                                <p class="product-menu__text">
+                                                    Готовое e-commerce решение для брендов одежды
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="under-menu__product product-menu">
+                                        <a href="/fashion.html" class="product-menu__link">
+                                            <img src="./img/icons/product.svg" alt="product" />
+                                            <div class="product-menu__info">
+                                                <h3 class="product-menu__title">YouBrand: Fashion</h3>
+                                                <p class="product-menu__text">
+                                                    Готовое e-commerce решение для брендов одежды
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="under-menu__product product-menu consultation">
+                                        <div class="consultation__info">
+                                            <h3 class="consultation__title">Проконсультировать по решению? </h3>
+                                            <div class="consultation__subtitle">Не можешь понять подходит тебе решение решение, напишите нам в телеграм, проконсультируем</div>
+                                        </div>
+                                        <button type="submit" class="consultation__button order-btn"><img src="./img/icons/tg.svg" alt="telegram" /> Консультация</button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item competencies-item big-menu">
+                                <a href="#" class="menu__link">Компетенции <img src="./img/icons/arrow.svg" alt="arrow" /></a>
+
+                                <ul class="menu__under under-menu competencies">
+                                    <li class="under-menu__block">
+                                        <span class="under-menu__span"> Разработка</span>
+                                        <div class="under-menu__body">
+                                            <ul class="under-menu__list">
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Сайт</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Сервис</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Дизайн</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">QA-тестирвоание</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="under-menu__block">
+                                        <span class="under-menu__span"> Поддержка</span>
+                                        <div class="under-menu__body">
+                                            <ul class="under-menu__list">
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Техническая</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Развитие магазина</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Аутстаф разработчика</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Доработка сайта</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="under-menu__block">
+                                        <span class="under-menu__span"> Фреймворки</span>
+                                        <div class="under-menu__body">
+                                            <ul class="under-menu__list">
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Битрикс</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Yii2</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Laravel</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Самописные</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="under-menu__block">
+                                        <span class="under-menu__span"> Веб-приложение</span>
+                                        <div class="under-menu__body">
+                                            <ul class="under-menu__list">
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">React</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Vue</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">Qwik</span></a>
+                                                </li>
+                                                <li class="under-menu__item">
+                                                    <a href="/services/" class="under-menu__link"><span class="under-menu__span-under">React native</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/cases/" class="menu__link">Кейсы</a>
+                            </li>
+                            <li class="menu__item big-menu">
+                                <a href="#" class="menu__link">Клиентам <img src="./img/icons/arrow.svg" alt="arrow" /></a>
+                                <ul class="menu__under under-menu clients">
+                                    <li class="under-menu__item">
+                                        <a href="/customers/">
+                                            <span>Договор</span></a>
+                                    </li>
+                                    <li class="under-menu__item">
+                                        <a href="/customers/">
+                                            <span>Реквизиты</span></a>
+                                    </li>
+                                    <li class="under-menu__item">
+                                        <a href="/customers/"><span>Оплата</span></a>
+                                    </li>
+                                    <li class="under-menu__item">
+                                        <a href="/customers/"><span>Вопросы-ответы</span></a>
+                                    </li>
+                                    <li class="under-menu__item">
+                                        <a href="/customers/"><span>Контакты</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/contact/" class="menu__link">Контакты</a>
+                            </li>
+                            <li class="menu__item">
+                                <div>
+                                    <ul class="menu__socials socials-menu">
+                                        <li class="socials-menu__item">
+                                            <a href="#" class="socials-menu__link">
+                                                <img src="./img/icons/behance.svg" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="socials-menu__item">
+                                            <a href="#" class="socials-menu__link">
+                                                <img src="./img/icons/vk2.svg" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="socials-menu__item">
+                                            <a href="#" class="socials-menu__link">
+                                                <img src="./img/icons/youtube.svg" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="socials-menu__item">
+                                            <a href="#" class="socials-menu__link">
+                                                <img src="./img/icons/tg-icon.svg" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="socials-menu__item">
+                                            <a href="#" class="socials-menu__link">
+                                                <img src="./img/icons/inst.svg" alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item bottom">
+                                <a href="#" class="menu__btn order-btn bottom-btn">
+                                    <img src="./img/icons/tg.svg" alt="telegram" />Заказать</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu__connect">
+                        <button type="submit" class="menu__btn">
+                            <img src="./img/icons/behance.svg" alt="behance" />
+                        </button>
+                        <button type="submit" class="menu__btn">
+                            <img src="./img/icons/youtube.svg" alt="youtube" />
+                        </button>
+                        <button type="submit" class="menu__btn order-btn">
+                            <img src="./img/icons/tg.svg" alt="telegram" />Заказать
+                        </button>
+                    </div>
+                    <div class="menu__burger"><span></span></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="home">
+                <div class="home__container">
+                    <div class="home__body">
+                        <h1 class="home__title">
+                            Запускаем
+                            <span>🛒 e-commerce</span>
+                            на максимум
+                        </h1>
+                        <p class="home__text">
+                            Разработка, поддержка и уникальные решения на
+                            <span>
+                                <img src="./img/icons/bitrix.svg" alt="bitrix" />
+                                1С-Битрикс
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="brands marquee">
+                <ul class="brands__list">
+                    <li class="brands__item">
+                        <img src="./img/brands/1.svg" alt="" />
+                    </li>
+                    <li class="brands__item">
+                        <img src="./img/brands/2.svg" alt="" />
+                    </li>
+                    <li class="brands__item">
+                        <img src="./img/brands/3.svg" alt="" />
+                    </li>
+                    <li class="brands__item">
+                        <img src="./img/brands/4.svg" alt="" />
+                    </li>
+                    <li class="brands__item">
+                        <img src="./img/brands/5.svg" alt="" />
+                    </li>
+                </ul>
+            </section>
+            <section class="podcast">
+                <div class="podcast__container">
+                    <h2 class="podcast__title">Подкастерская</h2>
+                    <p class="podcast__subtitle">
+                        Не жди много слов, посмотри какие крутые ребята участвуют у нас на
+                        подксте.
+                    </p>
+                    <ul class="podcast__social">
+                        <li class="podcast__item">
+                            <a href="#" class="podcast__link"><img src="./img/icons/vk.svg" alt="" /> Vk Video</a>
+                        </li>
+                        <li class="podcast__item">
+                            <a href="#" class="podcast__link"><img src="./img/icons/youtube2.svg" alt="" /> Youtube</a>
+                        </li>
+                        <li class="podcast__item">
+                            <a href="#" class="podcast__link"><img src="./img/icons/dzen.svg" alt="" /> Дзен</a>
+                        </li>
+                    </ul>
+                    <div class="podcast__items items-body">
+                        <div class="podcast__items-body">
+                            <iframe width="100%" height="466px" src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="items-body__text">
+                                Подскаст с Кириллом Аношиным основателем freelance.ru
+                            </p>
+                        </div>
+                        <div class="podcast__items-body">
+                            <iframe width="100%" height="466px" src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="items-body__text">
+                                Подскаст с Кириллом Аношиным основателем freelance.ru
+                            </p>
+                        </div>
+                        <div class="podcast__items-body">
+                            <iframe width="100%" height="466px" src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="items-body__text">
+                                Подскаст с Кириллом Аношиным основателем freelance.ru
+                            </p>
+                        </div>
+                        <div class="podcast__items-body">
+                            <iframe width="100%" height="466px" src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="items-body__text">
+                                Подскаст с Кириллом Аношиным основателем freelance.ru
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__container">
+                    <h2 class="footer__title">DIGITAL PLANS</h2>
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="/catalog/" class="footer__link">Компетенции
+                                    <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.23483 6.46065L0.198219 3.42402C0.0517656 3.27757 0.0517656 3.04013 0.198219 2.8937L0.552391 2.53952C0.698594 2.39332 0.935547 2.39304 1.08209 2.5389L3.5 4.94548L5.91789 2.5389C6.06444 2.39304 6.30139 2.39332 6.44759 2.53952L6.80177 2.8937C6.94822 3.04015 6.94822 3.27759 6.80177 3.42402L3.76517 6.46065C3.61872 6.60709 3.38128 6.60709 3.23483 6.46065Z" fill="black" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="/cases/" class="footer__link">Кейсы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="/customers/" class="footer__link">Клиентам
+                                    <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.23483 6.46065L0.198219 3.42402C0.0517656 3.27757 0.0517656 3.04013 0.198219 2.8937L0.552391 2.53952C0.698594 2.39332 0.935547 2.39304 1.08209 2.5389L3.5 4.94548L5.91789 2.5389C6.06444 2.39304 6.30139 2.39332 6.44759 2.53952L6.80177 2.8937C6.94822 3.04015 6.94822 3.27759 6.80177 3.42402L3.76517 6.46065C3.61872 6.60709 3.38128 6.60709 3.23483 6.46065Z" fill="black" /></svg></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="/about/" class="footer__link">О нас</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="/contact/" class="footer__link">Контакты</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="/cases/" class="footer__link">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                        <div class="footer__connect">
+                            <button type="submit" class="footer__btn">
+                                <img src="./img/icons/behance.svg" alt="behance" />
+                            </button>
+                            <button type="submit" class="footer__btn">
+                                <img src="./img/icons/youtube.svg" alt="youtube" />
+                            </button>
+                            <button type="submit" class="footer__btn order-btn">
+                                <img src="./img/icons/tg.svg" alt="telegram" />Заказать
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="decor">
+                    <picture>
+                        <source srcset="./img/decor-mobile.svg" media="(max-width: 380px)" />
+
+                        <img src="./img/decor.svg" />
+                    </picture>
+
+                </div>
+            </footer>
+        </main>
+    </div>
     <script src="js/jquery-1.11.3.min.js"></script>
 
     <script src="js/jquery.slinky.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
-    <link rel="stylesheet" href="style/slinky.min.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="jumbo absolute -inset-[10px] opacity-50"></div>
-      <header class="header">
-        <div class="header__container">
-          <div class="header__menu menu">
-            <div class="menu__logo">DIGITAL PLANS</div>
-            <nav class="menu__nav">
-              <ul class="menu__list">
-                <li class="menu__item big-menu">
-                  <a href="#" class="menu__link"
-                    >Продукты <img src="./img/icons/arrow.svg" alt="arrow"
-                  /></a>
-
-                  <ul class="menu__under under-menu products-items">
-                    <li class="under-menu__product product-menu">
-                      <a
-                        href="/catalog/"
-                        class="product-menu__link"
-                      >
-                        <img src="./img/icons/product.svg" alt="product" />
-                        <div class="product-menu__info">
-                          <h3 class="product-menu__title">YouBrand: Fashion</h3>
-                          <p class="product-menu__text">
-                            Готовое e-commerce решение для брендов одежды
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="under-menu__product product-menu">
-                      <a
-                        href="/catalog/"
-                        class="product-menu__link"
-                      >
-                        <img src="./img/icons/product.svg" alt="product" />
-                        <div class="product-menu__info">
-                          <h3 class="product-menu__title">YouBrand: Fashion</h3>
-                          <p class="product-menu__text">
-                            Готовое e-commerce решение для брендов одежды
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="under-menu__product product-menu">
-                      <a
-                        href="/catalog/"
-                        class="product-menu__link"
-                      >
-                        <img src="./img/icons/product.svg" alt="product" />
-                        <div class="product-menu__info">
-                          <h3 class="product-menu__title">YouBrand: Fashion</h3>
-                          <p class="product-menu__text">
-                            Готовое e-commerce решение для брендов одежды
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="under-menu__product product-menu">
-                      <a
-                        href="/catalog/"
-                        class="product-menu__link"
-                      >
-                        <img src="./img/icons/product.svg" alt="product" />
-                        <div class="product-menu__info">
-                          <h3 class="product-menu__title">YouBrand: Fashion</h3>
-                          <p class="product-menu__text">
-                            Готовое e-commerce решение для брендов одежды
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="under-menu__product product-menu consultation">
-                        <div class="consultation__info">
-                            <h3 class="consultation__title">Проконсультировать по решению? </h3>
-                            <div class="consultation__subtitle">Не можешь понять подходит тебе решение решение, напишите нам в телеграм, проконсультируем</div>
-                        </div>
-                        <button type="submit" class="consultation__button order-btn"><img src="./img/icons/tg.svg" alt="telegram" /> Консультация</button>
-                        </li>
-                  </ul>
-                </li>
-                <li class="menu__item competencies-item big-menu">
-                  <a href="#" class="menu__link"
-                    >Компетенции <img src="./img/icons/arrow.svg" alt="arrow"
-                  /></a>
-
-                  <ul class="menu__under under-menu competencies">
-                    <li class="under-menu__block">
-                      <span class="under-menu__span"> Разработка</span>
-                      <div class="under-menu__body">
-                        <ul class="under-menu__list">
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Сайт</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Сервис</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Дизайн</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >QA-тестирвоание</span
-                              ></a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="under-menu__block">
-                      <span class="under-menu__span"> Поддержка</span>
-                      <div class="under-menu__body">
-                        <ul class="under-menu__list">
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Техническая</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Развитие магазина</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Аутстаф разработчика</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Доработка сайта</span
-                              ></a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="under-menu__block">
-                      <span class="under-menu__span"> Фреймворки</span>
-                      <div class="under-menu__body">
-                        <ul class="under-menu__list">
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Битрикс</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Yii2</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Laravel</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Самописные</span
-                              ></a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="under-menu__block">
-                      <span class="under-menu__span"> Веб-приложение</span>
-                      <div class="under-menu__body">
-                        <ul class="under-menu__list">
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >React</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Vue</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >Qwik</span
-                              ></a
-                            >
-                          </li>
-                          <li class="under-menu__item">
-                            <a
-                              href="/services/"
-                              class="under-menu__link"
-                              ><span class="under-menu__span-under"
-                                >React native</span
-                              ></a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu__item">
-                  <a
-                    href="/cases/"
-                    class="menu__link"
-                    >Кейсы</a
-                  >
-                </li>
-                <li class="menu__item big-menu">
-                  <a href="#" class="menu__link"
-                    >Клиентам <img src="./img/icons/arrow.svg" alt="arrow"
-                  /></a>
-                  <ul class="menu__under under-menu clients">
-                    <li class="under-menu__item">
-                      <a href="/customers/">
-                        <span>Договор</span></a
-                      >
-                    </li>
-                    <li class="under-menu__item">
-                      <a href="/customers/">
-                        <span>Реквизиты</span></a
-                      >
-                    </li>
-                    <li class="under-menu__item">
-                      <a href="/customers/"
-                        ><span>Оплата</span></a
-                      >
-                    </li>
-                    <li class="under-menu__item">
-                      <a href="/customers/"
-                        ><span>Вопросы-ответы</span></a
-                      >
-                    </li>
-                    <li class="under-menu__item">
-                      <a href="/customers/"
-                        ><span>Контакты</span></a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu__item">
-                  <a
-                    href="/contact/"
-                    class="menu__link"
-                    >Контакты</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <div>
-                    <ul class="menu__socials socials-menu">
-                      <li class="socials-menu__item">
-                        <a href="#" class="socials-menu__link">
-                          <img src="./img/icons/behance.svg" alt="" />
-                        </a>
-                      </li>
-                      <li class="socials-menu__item">
-                        <a href="#" class="socials-menu__link">
-                          <img src="./img/icons/vk2.svg" alt="" />
-                        </a>
-                      </li>
-                      <li class="socials-menu__item">
-                        <a href="#" class="socials-menu__link">
-                          <img src="./img/icons/youtube.svg" alt="" />
-                        </a>
-                      </li>
-                      <li class="socials-menu__item">
-                        <a href="#" class="socials-menu__link">
-                          <img src="./img/icons/tg-icon.svg" alt="" />
-                        </a>
-                      </li>
-                      <li class="socials-menu__item">
-                        <a href="#" class="socials-menu__link">
-                          <img src="./img/icons/inst.svg" alt="" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu__item bottom">
-                  <a href="#" class="menu__btn order-btn bottom-btn">
-                    <img src="./img/icons/tg.svg" alt="telegram" />Заказать</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            <div class="menu__connect">
-              <button type="submit" class="menu__btn">
-                <img src="./img/icons/behance.svg" alt="behance" />
-              </button>
-              <button type="submit" class="menu__btn">
-                <img src="./img/icons/youtube.svg" alt="youtube" />
-              </button>
-              <button type="submit" class="menu__btn order-btn">
-                <img src="./img/icons/tg.svg" alt="telegram" />Заказать
-              </button>
-            </div>
-            <div class="menu__burger"><span></span></div>
-          </div>
-        </div>
-      </header>
-      <main>
-        <section class="home">
-          <div class="home__container">
-            <div class="home__body">
-              <h1 class="home__title">
-                Запускаем
-                <span>🛒 e-commerce</span>
-                на максимум
-              </h1>
-              <p class="home__text">
-                Разработка, поддержка и уникальные решения на
-                <span>
-                  <img src="./img/icons/bitrix.svg" alt="bitrix" />
-                  1С-Битрикс
-                </span>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="brands marquee">
-          <ul class="brands__list">
-            <li class="brands__item">
-              <img src="./img/brands/1.svg" alt="" />
-            </li>
-            <li class="brands__item">
-              <img src="./img/brands/2.svg" alt="" />
-            </li>
-            <li class="brands__item">
-              <img src="./img/brands/3.svg" alt="" />
-            </li>
-            <li class="brands__item">
-              <img src="./img/brands/4.svg" alt="" />
-            </li>
-            <li class="brands__item">
-              <img src="./img/brands/5.svg" alt="" />
-            </li>
-          </ul>
-        </section>
-        <section class="podcast">
-          <div class="podcast__container">
-            <h2 class="podcast__title">Подкастерская</h2>
-            <p class="podcast__subtitle">
-              Не жди много слов, посмотри какие крутые ребята участвуют у нас на
-              подксте.
-            </p>
-            <ul class="podcast__social">
-              <li class="podcast__item">
-                <a href="#" class="podcast__link"
-                  ><img src="./img/icons/vk.svg" alt="" /> Vk Video</a
-                >
-              </li>
-              <li class="podcast__item">
-                <a href="#" class="podcast__link"
-                  ><img src="./img/icons/youtube2.svg" alt="" /> Youtube</a
-                >
-              </li>
-              <li class="podcast__item">
-                <a href="#" class="podcast__link"
-                  ><img src="./img/icons/dzen.svg" alt="" /> Дзен</a
-                >
-              </li>
-            </ul>
-            <div class="podcast__items items-body">
-              <div class="podcast__items-body">
-                <iframe
-                  width="100%"
-                  height="466px"
-                  src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <p class="items-body__text">
-                  Подскаст с Кириллом Аношиным основателем freelance.ru
-                </p>
-              </div>
-              <div class="podcast__items-body">
-                <iframe
-                  width="100%"
-                  height="466px"
-                  src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <p class="items-body__text">
-                  Подскаст с Кириллом Аношиным основателем freelance.ru
-                </p>
-              </div>
-              <div class="podcast__items-body">
-                <iframe
-                  width="100%"
-                  height="466px"
-                  src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <p class="items-body__text">
-                  Подскаст с Кириллом Аношиным основателем freelance.ru
-                </p>
-              </div>
-              <div class="podcast__items-body">
-                <iframe
-                  width="100%"
-                  height="466px"
-                  src="https://www.youtube.com/embed/YnvOQji6zZ0?si=LZPK5mM8SdJsARGp"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <p class="items-body__text">
-                  Подскаст с Кириллом Аношиным основателем freelance.ru
-                </p>
-              </div>
-            </div>
-          </div>
-        </section> 
-        <footer class="footer">
-          <div class="footer__container">
-            <h2 class="footer__title">DIGITAL PLANS</h2>
-            <nav class="footer__nav">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a
-                    href="/catalog/"
-                    class="footer__link"
-                    >Компетенции
-                    <svg
-                      width="7"
-                      height="9"
-                      viewBox="0 0 7 9"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.23483 6.46065L0.198219 3.42402C0.0517656 3.27757 0.0517656 3.04013 0.198219 2.8937L0.552391 2.53952C0.698594 2.39332 0.935547 2.39304 1.08209 2.5389L3.5 4.94548L5.91789 2.5389C6.06444 2.39304 6.30139 2.39332 6.44759 2.53952L6.80177 2.8937C6.94822 3.04015 6.94822 3.27759 6.80177 3.42402L3.76517 6.46065C3.61872 6.60709 3.38128 6.60709 3.23483 6.46065Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer__item">
-                  <a
-                    href="/cases/"
-                    class="footer__link"
-                    >Кейсы</a
-                  >
-                </li>
-                <li class="footer__item">
-                  <a href="/customers/" class="footer__link"
-                    >Клиентам
-                    <svg
-                      width="7"
-                      height="9"
-                      viewBox="0 0 7 9"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.23483 6.46065L0.198219 3.42402C0.0517656 3.27757 0.0517656 3.04013 0.198219 2.8937L0.552391 2.53952C0.698594 2.39332 0.935547 2.39304 1.08209 2.5389L3.5 4.94548L5.91789 2.5389C6.06444 2.39304 6.30139 2.39332 6.44759 2.53952L6.80177 2.8937C6.94822 3.04015 6.94822 3.27759 6.80177 3.42402L3.76517 6.46065C3.61872 6.60709 3.38128 6.60709 3.23483 6.46065Z"
-                        fill="black"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="footer__item">
-                  <a
-                    href="/about/"
-                    class="footer__link"
-                    >О нас</a
-                  >
-                </li>
-                <li class="footer__item">
-                  <a
-                    href="/contact/"
-                    class="footer__link"
-                    >Контакты</a
-                  >
-                </li>
-                <li class="footer__item">
-                  <a
-                    href="/cases/"
-                    class="footer__link"
-                    >Политика конфиденциальности</a
-                  >
-                </li>
-              </ul>
-              <div class="footer__connect">
-                <button type="submit" class="footer__btn">
-                  <img src="./img/icons/behance.svg" alt="behance" />
-                </button>
-                <button type="submit" class="footer__btn">
-                  <img src="./img/icons/youtube.svg" alt="youtube" />
-                </button>
-                <button type="submit" class="footer__btn order-btn">
-                  <img src="./img/icons/tg.svg" alt="telegram" />Заказать
-                </button>
-              </div>
-            </nav>
-          </div>
-          <div class="decor">
-            <picture>
-              <source
-                srcset="./img/decor-mobile.svg"
-                media="(max-width: 380px)"
-              />
-
-              <img src="./img/decor.svg" />
-            </picture>
-
-            <!-- <img src="./img/decor-mobile.svg" alt="" /> -->
-          </div>
-        </footer>
-      </main>
-    </div>
-
     <script src="./js/script.js"></script>
-  </body>
+</body>
+
 </html>

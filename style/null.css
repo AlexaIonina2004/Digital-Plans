@@ -32,7 +32,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   color: var(--main-color);
-  font-family: "HalvarBreit";
+
 }
 input,
 button,
@@ -78,14 +78,24 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
 .wrapper {
-  /* font-family: "HalvarBreit"; */
+  font-family: "HalvarBreit";
   min-height: 100%;
   font-weight: 500;
   overflow: hidden;
 }
+.wrapper-fashion  {
+  font-family: "Jost";
+  font-weight: 400;
+}
 [class*="__container"] {
   max-width: 1650px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+[class*="__container-fashion"] {
+  max-width: 1550px;
   margin: 0 auto;
   padding: 0px 15px;
 }

@@ -35,14 +35,5 @@
   width: 0;
 }
 .menu-open .menu__burger {
-  /* width: 44px; */
   width: 0;
-}
-.menu-open .menu__burger::before {
-  /* top: calc(50% - 1px);
-  transform: rotate(-45deg); */
-}
-.menu-open .menu__burger::after {
-  /* bottom: calc(50% - 1px);
-  transform: rotate(45deg); */
 }

@@ -1,0 +1,10 @@
+.light-section {
+    padding-top: 80px;
+    background: var(--light-background);
+    padding-bottom: 98px;
+}
+@media (max-width: 500px){
+      .light-section {
+        padding-top: 40px;
+      }
+}

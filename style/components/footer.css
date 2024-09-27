@@ -2,7 +2,7 @@
     position: relative;
   background: var(--background-dark);
   padding: 64px 0px 550px 0px;
-
+font-family: 'HalvarBreit';
   color: var(--white-color);
 }
 .decor {

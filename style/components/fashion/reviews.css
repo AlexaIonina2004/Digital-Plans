@@ -1,0 +1,117 @@
+.reviews {
+  padding-top: 109px;
+  padding-bottom: 70px;
+  background: #f6f4f7;
+  margin-bottom: 80px;
+}
+.reviews__body {
+  margin-top: 60px;
+}
+.reviews__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 128px;
+}
+.items-reviews__body {
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 28px;
+  background: var(--white-color);
+  border-radius: 11px;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+.items-reviews__body::before {
+    content: url(../../../img/fashion/icons/decor-reviews.svg);
+    position: absolute;
+    top: 0;
+    right: 28px;
+    z-index: -1;
+}
+.items-reviews__body:not(:last-child) {
+  margin-bottom: 30px;
+}
+.items-reviews__name {
+  margin-bottom: 17px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.items-reviews__grade {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 400;
+  font-size: 25px;
+  color: #c9cbd1;
+  margin-bottom: 18px;
+}
+.items-reviews__text {
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--main-color);
+  line-height: 35px;
+}
+.grade-reviews__title {
+  margin-bottom: 16px;
+}
+.grade-reviews__stars {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 40px;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+.grade-reviews__stars span img {
+  width: 47px;
+  height: 47px;
+}
+.grade-reviews span {
+  font-size: 25px;
+  font-weight: 400;
+}
+.reviews__btn {
+    display: inline-block;
+}
+@media (max-width: 991px) {
+  .reviews__body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "grade"
+      "reviews";
+  }
+  .items-reviews {
+    grid-area: reviews;
+  }
+  .grade-reviews {
+    grid-area: grade;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .reviews {
+    padding-top: 59px;
+    margin-bottom: 40px;
+  }
+  .grade-reviews__stars {
+    font-size: 25px;
+  }
+  .grade-reviews__stars span img {
+    width: 34px;
+    height: 34px;
+  }
+  .grade-reviews span {
+    font-size: 20px;
+  }
+  .items-reviews__name {
+    font-size: 21px;
+  }
+  .items-reviews__grade {
+    font-size: 13px;
+  }
+  .items-reviews__text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}

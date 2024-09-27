@@ -1,0 +1,227 @@
+.cost {
+  margin-bottom: 82px;
+}
+.cost__top {
+  margin-bottom: 50px;
+}
+.cost__subtitle span {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--white-color);
+  background: var(--red-color);
+  padding: 5px 9px;
+  border-radius: 5px;
+}
+.cost__subtitle {
+  margin-bottom: 50px;
+}
+
+.cost__recalculation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+.cost__text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-weight: 600;
+  font-size: 30px;
+  gap: 5px;
+}
+.cost__text span {
+  font-weight: 400;
+  font-size: 20px;
+  color: #c9cbd1;
+}
+.cost__switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.cost__switch input {
+  display: none;
+}
+
+.cost__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f2f2f7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 75px;
+}
+
+.cost__slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--white-color);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .cost__slider {
+  background: var(--red-color);
+}
+
+input:focus + .cost__slider {
+  box-shadow: 0 0 1px  var(--red-color);
+}
+
+input:checked + .cost__slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.items-cost {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.items-cost__body {
+  position: relative;
+  border-radius: 3px;
+  background: #f6f4f7;
+}
+.items-cost__best {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 0 0 0 3px;
+  background: #f2994a;
+}
+.items-cost__body:nth-child(2) {
+  border: 4px solid #f2994a;
+}
+.items-cost__body img {
+  width: 100%;
+}
+.items-cost__text-block {
+  padding: 11px 32px 50px 31px;
+}
+.items-cost__title {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 33px;
+}
+.items-cost__product-cost {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 49px;
+}
+.items-cost__economic {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 20px;
+  color: #219653;
+  padding: 10px 14px;
+  background: rgba(111, 207, 151, 0.5);
+  border-radius: 3px;
+  height: 100%;
+}
+.items-cost__summ {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #b2b5bb;
+  white-space: nowrap;
+}
+.items-cost__summ span {
+  font-weight: 600;
+  font-size: 55px;
+  color:  var(--red-color);
+}
+.items-cost__list {
+  margin-bottom: 50px;
+}
+.items-cost__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0px;
+  border-top: 1px solid #d9d9d9;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 20px;
+}
+.items-cost__item s {
+  font-weight: 400;
+  color: #b2b5bb;
+}
+
+@media (max-width: 1470px) {
+  .items-cost__title {
+    font-size: 18px;
+  }
+  .items-cost__summ {
+    font-size: 22px;
+  }
+  .items-cost__summ span {
+    font-size: 40px;
+  }
+  .items-cost__economic {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1254px) {
+  .items-cost {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 848px) {
+  .items-cost {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .items-cost__item {
+    font-size: 14px;
+  }
+  .items-cost__summ {
+    font-size: 16px;
+  }
+  .items-cost__summ span {
+    font-size: 29px;
+  }
+  .items-cost__economic {
+    font-size: 14px;
+  }
+  .items-cost__text-block {
+    padding: 11px 10px 50px 10px;
+  }
+}
+@media (max-width: 385px) {
+  .cost__text {
+    font-size: 25px;
+  }
+  .cost__text span {
+    font-size: 16px;
+  }
+  .cost__switch {
+    width: 68px;
+    height: 29px;
+  }
+  .cost__slider:before {
+    height: 20px;
+    width: 20px;
+  }
+}
