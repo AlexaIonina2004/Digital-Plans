@@ -53,13 +53,13 @@
 .btn-black {
   color: var(--white-color);
   background: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 .btn-black:hover {
   color: var(--main-color);
   background: var(--white-color);
-  border: 1px solid var(--main-color);
 }
 
-
-
-
+.open-menu img {
+  transform: rotate(-180deg);
+}

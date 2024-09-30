@@ -26,7 +26,12 @@
 .faq__top img {
   width: 50px;
   height: 50px;
+  user-select: none;
 }
+.faq__open-btn img{
+  transition: 0.3s;
+}
+
 .faq__text {
   transition: 0.3s;
   max-height: 0px;
@@ -39,9 +44,7 @@
   line-height: 30px;
   padding: 0px 24px 0px 24px;
 }
-.faq__open-btn {
-  transition: 0.3s;
-}
+
 @media (max-width: 768px){
     .faq__top {
         font-size: 26px;
